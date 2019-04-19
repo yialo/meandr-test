@@ -1,11 +1,9 @@
 .#{$this}__container {
-  @include media-breakpoint-from(hg) {
-    @include margin-hor(auto);
-    display: flex;
-    flex-direction: column;
-    width: 760px;
-    padding-top: 165px;
-    padding-bottom: 126px;
-    text-align: center;
-  }
+  @include margin-hor(auto);
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  padding-top: 165px;
+  padding-bottom: 126px;
+  text-align: center;
 }

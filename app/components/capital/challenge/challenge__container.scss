@@ -1,12 +1,10 @@
 .#{$this}__container {
-  @include media-breakpoint-from(hg) {
-    @include padding-hor(234px);
-    padding-top: 501px;
-    padding-bottom: 80px;
-    background-color: $color-gray-light;
-    background-image: url("../img/#{$this}__container.jpg");
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  @include padding-hor(234px);
+  padding-top: 501px;
+  padding-bottom: 80px;
+  background-color: $color-gray-light;
+  background-image: url("../img/#{$this}__container.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

@@ -1,8 +1,4 @@
 .#{$this} {
   @include margin-hor(auto);
-  max-width: $page-min-width;
-
-  @include media-breakpoint-from(hg) {
-    max-width: get-breakpoint(hg);
-  }
+  max-width: get-breakpoint(hg);
 }

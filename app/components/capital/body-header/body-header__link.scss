@@ -16,16 +16,16 @@
     left: 0;
     background-color: rgba(135, 135, 135, 0.05);
     background-image: url("../img/#{$this}__link.svg");
-    background-position: center;
+    background-position: 20px center;
     background-size: 14px 14px;
     background-repeat: no-repeat;
     border-radius: $_height / 2;
+    transition: width 0.25s;
   }
 
   &:hover {
     &::before {
       width: 100%;
-      background-position-x: 20px;
     }
   }
 }
