@@ -1,0 +1,11 @@
+.#{$this}__item {
+  $_icon-height: 52px;
+
+  @include padding-hor($_gutter-hor);
+  width: calc(100% / 3);
+  padding-top: $_icon-height + 30px;
+  background-image: url("../img/#{$this}__item.svg");
+  background-position: $_gutter-hor 0;
+  background-size: $_icon-height $_icon-height;
+  background-repeat: no-repeat;
+}

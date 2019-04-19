@@ -1,0 +1,30 @@
+mixin challenge()
+  -
+    const _LIST = [
+      [
+        'Прокачиваем мир',
+        'Вы хотите сделать мир лучше и не готовы ждать всю жизнь, чтобы начать это делать?',
+      ],
+      [
+        'Мотивируем себя',
+        'У вас есть собственная цель и вы не боитесь много работать, чтобы её достичь?',
+      ],
+      [
+        'Используем лучшее',
+        'Вы способны применять разные подходы для достижения своих целей?',
+      ],
+      [
+        'Относимся с пониманием',
+        'Вы не обвиняете других в свои неудачах и способны воспринимать критику?',
+      ],
+    ];
+
+  .challenge
+    .s-container.challenge__container
+      h2.s-visually-hidden Вызов
+      ul.s-list.challenge__list
+        each item in _LIST
+          - const [caption, details] = item;
+          li.challenge__item
+            h3.challenge__caption= caption
+            p.challenge__details= details

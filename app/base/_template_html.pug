@@ -15,10 +15,5 @@ html(class='page', lang='ru')
   include ../global/head/_head.pug
   body(class=setModifiers('body', [$pageId]))
     .body__container
-      header.body__header
-        block body__header
-      main.body__main
-        block body__main
-      footer.body__footer
-        block body__footer
+      block body__Content
     include ../components/capital/body/_body__Scripts.pug

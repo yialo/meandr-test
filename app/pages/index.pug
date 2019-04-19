@@ -2,3 +2,18 @@ extends ../base/_template_html.pug
 
 block page-id
   - const $pageId = 'index';
+
+block body__Content
+  header.body__header
+    +body-header()
+  main.body__main
+    .body-main
+      mixin body-main__nest(modifier)
+        section(class=setModifiers('body-main__nest', [modifier]))
+          block
+      +body-main__nest('challenge')
+        +challenge()
+      +body-main__nest('about')
+        +about()
+      +body-main__nest('advantages')
+        +advantages()

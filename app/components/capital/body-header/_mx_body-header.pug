@@ -1,0 +1,9 @@
+mixin body-header()
+  .body
+    .body-header__container
+      h1.s-visually-hidden.body-header__heading Сайт #{$SITE_TITLE}
+      p.s-heading.body-header__lead Ты готов стать профессионалом?
+      p.s-paragraph.body-header__description Мы ищем #[span.body-header__string= 'талантов'] и #[span.body-header__string= 'саппортов'] в команду. Решите на какую категорию вы претендуете.
+      a.body-header__link(href='#')
+        span.body-header__legend Заполнить анкету
+

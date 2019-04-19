@@ -1,0 +1,17 @@
+.#{$this}__caption {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 51px;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+
+  &::after {
+    @include size(24px, 2px);
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    background-color: $color-orange;
+  }
+}

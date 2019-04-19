@@ -1,0 +1,8 @@
+.#{$this}__paragraph {
+  margin-bottom: 26px;
+  color: $color-gray-dark-1;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,4 @@
+.#{$this}__list {
+  @include margin-hor(-$_gutter-hor);
+  display: flex;
+}

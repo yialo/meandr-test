@@ -1,11 +1,8 @@
 .#{$this} {
   @include margin-hor(auto);
-  @include padding-hor(20px);
-  width: $page-min-width;
+  max-width: $page-min-width;
 
-  // @each $breakpoint-name, $breakpoint in $breakpoints {
-  //   @include media-breakpoint-from($breakpoint-name) {
-  //     max-width: $breakpoint - 32px;
-  //   }
-  // }
+  @include media-breakpoint-from(hg) {
+    max-width: get-breakpoint(hg);
+  }
 }

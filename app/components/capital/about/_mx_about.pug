@@ -1,0 +1,7 @@
+mixin about()
+  include _dt_about.pug
+  .about
+    .s-container.about__container
+      h2.s-heading.about__heading Мы похожи!
+      each parapraph, index in _PARAGRAPHS
+        p.s-paragraph.about__paragraph(class=(index === _PARAGRAPHS.length - 1 ? 'about__paragraph--last' : null))= parapraph
