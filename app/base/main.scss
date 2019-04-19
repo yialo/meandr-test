@@ -1,0 +1,23 @@
+@import
+  "../global/functions/*.scss",
+  "../global/data/*.scss",
+  "../global/methods/*.scss",
+  "../global/mixins/*.scss";
+
+@import
+  "~normalize.css";
+
+@import
+  "../vendor_customized/*.scss";
+
+@import
+  "../global/styles/_fonts.scss",
+  "../global/styles/_root.scss",
+  "../global/styles/_animations.scss",
+  "../global/styles/_tags.scss";
+
+@import
+  "../components/scaffold/s-container/*.scss";
+
+@import
+  "../components/capital/about/*.scss";

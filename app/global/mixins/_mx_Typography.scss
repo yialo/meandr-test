@@ -1,0 +1,8 @@
+@mixin heading($font-size: 20px, $line-height: 1) {
+  @include margin-ver(0);
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

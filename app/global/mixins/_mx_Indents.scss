@@ -1,0 +1,19 @@
+@mixin margin-hor($mh: auto) {
+  margin-left: $mh;
+  margin-right: $mh;
+}
+
+@mixin margin-ver($mv: 0) {
+  margin-top: $mv;
+  margin-bottom: $mv;
+}
+
+@mixin padding-hor($ph: 20px) {
+  padding-left: $ph;
+  padding-right: $ph;
+}
+
+@mixin padding-ver($pv: 16px) {
+  padding-top: $pv;
+  padding-bottom: $pv;
+}

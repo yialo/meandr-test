@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $page-min-width;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Arial", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}

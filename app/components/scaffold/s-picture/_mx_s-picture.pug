@@ -1,0 +1,43 @@
+mixin s-picture()
+  -
+    const {
+      class: classNames,
+      'inner-class': innerClassname=null,
+      alt,
+      path,
+      ext='jpg',
+      'media-set': mediaSet,
+    } = attributes;
+    const getData = function getPictureData() {
+      const _BREAKPOINTS = { lg: '(min-width: 992px)' };
+      const lastIndex = mediaSet.length - 1;
+      let finalSet = { srcset: '', sizes: '' };
+
+      finalSet.src = `img/${path}@${mediaSet[lastIndex]}.${ext}`;
+
+      for (let i = 0; i <= lastIndex; i += 1) {
+        if (i < lastIndex) {
+          const [mq, width] = mediaSet[i];
+          const srcToAdd = `img/${path}@${width}.${ext} ${width}w, `;
+          const sizeToAdd = `${_BREAKPOINTS[mq]} ${width}px, `;
+          finalSet.srcset += srcToAdd;
+          finalSet.sizes += sizeToAdd;
+        } else {
+          const srcToAdd = `img/${path}@${mediaSet[i]}.${ext} ${mediaSet[i]}w`;
+          finalSet.srcset += srcToAdd;
+          finalSet.sizes += `${mediaSet[i]}px`;
+        }
+      }
+
+      return finalSet;
+    };
+
+  picture.s-picture(class=classNames)
+    - const { srcset, sizes, src } = getData();
+    img.s-picture__image(
+      class=innerClassname,
+      srcset=srcset,
+      sizes=sizes,
+      src=src,
+      alt=alt,
+    )

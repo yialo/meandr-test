@@ -1,0 +1,10 @@
+head
+  meta(charset='utf-8')
+  title #{$pageTitle} | #{$SITE_TITLE}
+  include _head_General_meta.pug
+  include _head_Favicons.pug
+  include _head_Fonts.pug
+  block head__Page-scripts
+  link(rel='stylesheet', href='css/main.min.css')
+
+//- TODO: add real favicon

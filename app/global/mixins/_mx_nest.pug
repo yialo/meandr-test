@@ -1,0 +1,13 @@
+mixin nest()
+  - const { parent, modifier, tag='div' } = attributes;
+  case modifier
+    when 'section'
+      section(class=setModifiers(`${parent}__nest`, [modifier]))
+        block
+    when 'p'
+      p(class=setModifiers(`${parent}__nest`, [modifier]))
+        block
+    when 'div'
+    default
+      div(class=setModifiers(`${parent}__nest`, [modifier]))
+        block
