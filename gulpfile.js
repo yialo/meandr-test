@@ -40,8 +40,8 @@ const getSrc = function getSourcePathsForCopy(srcFolder, extSet) {
 };
 
 const bitmapsSrc = getSrc('bitmaps', bitmapExts);
-const faviconstSrc = './app/global/favicons/*';
-const fontsSrc = `./app/global/fonts/*.${fontExts}`;
+const faviconstSrc = './app/favicons/*';
+const fontsSrc = `./app/fonts/*.${fontExts}`;
 const jsSrc = [
   './app/scripts/*.js',
   './app/vendor/*.js',
