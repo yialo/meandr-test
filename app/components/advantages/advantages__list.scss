@@ -1,4 +1,6 @@
 .#{$this}__list {
-  @include margin-hor(-$_gutter-hor);
-  display: flex;
+  @include media-breakpoint-from(hg) {
+    @include margin-hor(-$_gutter-hor);
+    display: flex;
+  }
 }

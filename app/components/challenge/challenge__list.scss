@@ -1,6 +1,9 @@
 .#{$this}__list {
-  display: flex;
-  flex-wrap: wrap;
   background-color: white;
   border: $_border;
+
+  @include media-breakpoint-from(hg) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -1,0 +1,17 @@
+// Get next breakpoint value from $breakpoints map
+
+@function get-next-breakpoint($breakpoint-name) {
+  $breakpoints-length: length($breakpoints);
+  $breakpoint-names-list: map-keys($breakpoints);
+  $breakpoints-list: map-values($breakpoints);
+  $breakpoint-index: index($breakpoint-names-list, $breakpoint-name);
+  $next-breakpoint-index: $breakpoint-index + 1;
+
+  @if $next-breakpoint-index > $breakpoints-length {
+    @error "Next breakpoint is not exist.";
+  }
+
+  $next-breakpoint: nth($breakpoints-list, $next-breakpoint-index);
+
+  @return $next-breakpoint;
+}

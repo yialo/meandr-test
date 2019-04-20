@@ -1,12 +1,19 @@
 .s-heading {
   @include margin-ver(0);
-  font-size: 48px;
+  font-size: 32px;
   line-height: normal;
   letter-spacing: -0.02em;
 
   &--small {
-    @include padding-hor(2em);
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
+  }
+
+  @include media-breakpoint-from(hg) {
+    font-size: 48px;
+
+    &--small {
+      font-size: 40px;
+    }
   }
 }

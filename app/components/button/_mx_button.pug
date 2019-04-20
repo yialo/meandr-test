@@ -1,0 +1,11 @@
+mixin button()
+  - const { type, modifier, class: parentClass=null } = attributes;
+  button.button(
+    class=[
+      (modifier ? `button--${modifier}` : null),
+      parentClass,
+    ],
+    type=type,
+  )
+    span.button__legend
+      block

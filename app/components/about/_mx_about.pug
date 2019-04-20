@@ -1,7 +1,9 @@
 mixin about()
   include _dt_about.pug
-  .about
+  .about.is-collapsed
     .s-container.about__container
       h2.s-heading.about__heading Мы похожи!
-      each parapraph, index in _PARAGRAPHS
-        p.s-paragraph.about__paragraph(class=(index === _PARAGRAPHS.length - 1 ? 'about__paragraph--last' : null))= parapraph
+      p.s-paragraph.about__paragraph= _PARAGRAPHS[0]
+      +button().about__button(type='button') Читать далее
+      p.s-paragraph(class=setModifiers('about__paragraph', ['last']))
+        = _PARAGRAPHS[1]

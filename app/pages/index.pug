@@ -4,6 +4,7 @@ block page-id
   - const $pageId = 'index';
 
 block body__Content
+  h1.s-visually-hidden.body__heading Сайт #{$SITE_TITLE}
   main.body__main
     .body-main
       +body-main__nest('slogan')

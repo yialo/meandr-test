@@ -1,14 +1,14 @@
-include _import_functions.pug
+include _import_Functions.pug
 
-include ../global/data/_dt_common.pug
-include ../global/data/_dt_pages.pug
+include ../global/data/_dt_Common.pug
+include ../global/data/_dt_Pages.pug
 
 block page-id
 
 - const [$pageTitle, $pageHeading] = $PAGES[$pageId];
 
-include _import_methods.pug
-include _import_mixins.pug
+include _import_Methods.pug
+include _import_Mixins.pug
 
 doctype html
 html(class='page', lang='ru')

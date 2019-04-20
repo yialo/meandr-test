@@ -1,4 +1,5 @@
-.#{$this}__button-legend {
+.#{$this}__legend {
+  @include padding-hor(1em);
   display: flex;
   justify-content: center;
   align-items: center;

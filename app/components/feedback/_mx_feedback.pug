@@ -40,5 +40,6 @@ mixin feedback()
               name='about',
               placeholder='Свой проект по созданию универсальной инфраструктуры строительства',
             )
-        button.feedback__button(type='submit')
-          span.feedback__button-legend Отправить
+        +button().feedback__button(
+          type='submit',
+        ): | Отправить

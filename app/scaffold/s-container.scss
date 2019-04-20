@@ -1,4 +1,10 @@
 .s-container {
   @include margin-hor(auto);
-  max-width: get-breakpoint(hg);
+  @include padding-hor(20px);
+  max-width: get-breakpoint(sm) - 40px;
+
+  @include media-breakpoint-from(hg) {
+    @include padding-hor(0);
+    max-width: get-breakpoint(hg) - 40px;
+  }
 }

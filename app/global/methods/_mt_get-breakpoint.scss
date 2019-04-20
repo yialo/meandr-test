@@ -1,3 +1,5 @@
+// Get breakpoint value from $breakpoints map
+
 @function get-breakpoint($breakpoint-name) {
   @return map-get($breakpoints, $breakpoint-name);
 }

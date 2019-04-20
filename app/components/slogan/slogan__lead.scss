@@ -1,4 +1,8 @@
 .#{$this}__lead {
   margin-bottom: 24px;
-  line-height: 54px;
+  line-height: 1.5;
+
+  @include media-breakpoint-from(hg) {
+    line-height: 54px;
+  }
 }

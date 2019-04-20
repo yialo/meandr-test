@@ -1,4 +1,6 @@
 .#{$this}__content {
-  padding-left: 135px;
-  padding-right: 166px;
+  @include media-breakpoint-from(hg) {
+    padding-left: 135px;
+    padding-right: 166px;
+  }
 }

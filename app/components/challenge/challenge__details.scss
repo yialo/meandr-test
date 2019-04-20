@@ -1,6 +1,10 @@
 .#{$this}__details {
   @include margin-ver(0);
-  font-size: 24px;
+  font-size: 16px;
   line-height: normal;
   letter-spacing: -0.03em;
+
+  @include media-breakpoint-from(hg) {
+    font-size: 24px;
+  }
 }

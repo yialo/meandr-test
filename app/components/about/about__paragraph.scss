@@ -5,4 +5,12 @@
   &--last {
     margin-bottom: 0;
   }
+
+  @include media-breakpoint-to(sm) {
+    &--last {
+      .is-collapsed & {
+        @include visually-hiding();
+      }
+    }
+  }
 }

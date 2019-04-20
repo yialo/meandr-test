@@ -1,4 +1,6 @@
 .#{$this}__item {
-  @include padding-hor($_gutter-hor);
-  width: calc(100% / 3);
+  @include media-breakpoint-from(hg) {
+    @include padding-hor($_gutter-hor);
+    width: calc(100% / 3);
+  }
 }
