@@ -1,7 +1,9 @@
 .#{$this}__item {
+  $_top-shift: 22px;
+
   position: relative;
   margin-bottom: 48px;
-  padding-top: 22px;
+  padding-top: $_counter-width + $_top-shift;
   counter-increment: feedback__item;
 
   &::before {
@@ -9,7 +11,7 @@
     content: counter(feedback__item);
     position: absolute;
     top: 0;
-    left: -$_padding-left;
+    left: calc(50% - #{$_counter-width} / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,5 +25,13 @@
 
   &--last {
     margin-bottom: 0;
+  }
+
+  @include media-breakpoint-from(hg) {
+    padding-top: $_top-shift;
+
+    &::before {
+      left: -$_padding-left;
+    }
   }
 }

@@ -1,5 +1,10 @@
 .#{$this}__heading {
-  margin-bottom: 60px;
-  line-height: 52px;
+  margin-bottom: 48px;
+  line-height: 1.2;
   color: white;
+
+  @include media-breakpoint-from(hg) {
+    line-height: 52px;
+    margin-bottom: 60px;
+  }
 }

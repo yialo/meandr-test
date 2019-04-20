@@ -1,4 +1,9 @@
 .#{$this}__container {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  @include media-breakpoint-from(hg) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
