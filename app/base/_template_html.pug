@@ -1,18 +1,18 @@
-include _import_Functions.pug
+include _import_functions.pug
 
-include ../global/data/_dt_Common.pug
-include ../global/data/_dt_Pages.pug
+include ../global/data/_dt_common.pug
+include ../global/data/_dt_pages.pug
 
 block page-id
 
 - const [$pageTitle, $pageHeading] = $PAGES[$pageId];
 
-include _import_Methods.pug
-include _import_Mixins.pug
+include _import_methods.pug
+include _import_mixins.pug
 
 doctype html
 html(class='page', lang='ru')
   include ../head/_head.pug
   body(class=setModifiers('body', [$pageId]))
     block body__Content
-    include ../components/body/_body__Scripts.pug
+    include ../components/body/_body_scripts.pug
