@@ -14,6 +14,5 @@ doctype html
 html(class='page', lang='ru')
   include ../head/_head.pug
   body(class=setModifiers('body', [$pageId]))
-    .body__container
-      block body__Content
+    block body__Content
     include ../components/body/_body__Scripts.pug
