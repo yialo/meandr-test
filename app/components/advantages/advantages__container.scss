@@ -1,5 +1,10 @@
 .#{$this}__container {
+  padding-top: 50px;
+  padding-bottom: 60px;
   background-color: $color-gray-light;
-  padding-top: 120px;
-  padding-bottom: 160px;
+
+  @include media-breakpoint-from(hg) {
+    padding-top: 120px;
+    padding-bottom: 160px;
+  }
 }

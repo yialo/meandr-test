@@ -1,5 +1,8 @@
 .#{$this}__item {
+  @include padding-ver($_gutter-ver);
+
   @include media-breakpoint-from(hg) {
+    @include padding-ver(0);
     @include padding-hor($_gutter-hor);
     width: calc(100% / 3);
   }

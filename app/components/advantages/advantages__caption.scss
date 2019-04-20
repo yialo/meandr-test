@@ -1,17 +1,29 @@
 .#{$this}__caption {
   position: relative;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
   color: black;
 
   &::after {
-    @include size(24px, 2px);
+    $_dash-width: 24px;
+
+    @include size($_dash-width, 2px);
     content: "";
     position: absolute;
     bottom: -22px;
-    left: 0;
+    left: calc(50% - #{$_dash-width} / 2);
     background-color: $color-orange;
+  }
+
+  @include media-breakpoint-from(hg) {
+    margin-bottom: 51px;
+    text-align: left;
+
+    &::after {
+      left: 0;
+    }
   }
 }

@@ -3,6 +3,11 @@
 
   padding-top: $_icon-height + 30px;
   background-image: url("../img/#{$this}__item.svg");
+  background-position-x: center;
   background-size: $_icon-height $_icon-height;
   background-repeat: no-repeat;
+
+  @include media-breakpoint-from(hg) {
+    background-position-x: left;
+  }
 }
