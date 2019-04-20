@@ -1,0 +1,27 @@
+.#{$this}__item {
+  position: relative;
+  margin-bottom: 48px;
+  padding-top: 22px;
+  counter-increment: feedback__item;
+
+  &::before {
+    @include size($_counter-width);
+    content: counter(feedback__item);
+    position: absolute;
+    top: 0;
+    left: -$_padding-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: normal;
+    font-family: $font-roboto;
+    color: $color-orange;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 50%;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+}

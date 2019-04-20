@@ -1,0 +1,16 @@
+.#{$this}__button {
+  $_min-height: 54px;
+
+  width: 100%;
+  min-height: $_min-height;
+  padding: 0;
+  font-size: 14px;
+  line-height: normal;
+  font-family: $font-gilroy;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-orange;
+  background-color: white;
+  border-style: none;
+  border-radius: $_min-height / 2;
+}

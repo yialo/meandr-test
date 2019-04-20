@@ -1,0 +1,44 @@
+mixin feedback()
+  mixin feedback__item()
+    - const { modifier, caption } = attributes;
+    li.feedback__item(class=(modifier ? `feedback__item--${modifier}` : null))
+      label.feedback__label
+        span.feedback__caption= caption
+        block
+  -
+    const _FIELDS = [
+      ['fullname', 'text', 'Фамилия и имя', 'Сидоров Александр'],
+      ['email', 'email', 'Электронная почта', 'Sidorov@yandex.ru'],
+      ['tel', 'tel', 'Телефон', '+7 (999)-328-14-20'],
+    ];
+
+  .feedback
+    .s-container.feedback__container
+      h2.feedback__heading(class=setModifiers('s-heading', ['small']))
+        | Теперь расскажите о себе
+      form.feedback__form(
+        action=$FORM_DEFAULT_ACTION,
+        method='POST',
+        name='feedback',
+      )
+        ol.s-list.feedback__list
+          each field in _FIELDS
+            - const [name, type, caption, placeholder] = field;
+            +feedback__item(caption=caption)
+              input(
+                class=setModifiers('feedback__field', ['input']),
+                type=type,
+                name=name,
+                placeholder=placeholder,
+              )
+          +feedback__item(
+            modifier='last',
+            caption='Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?',
+          )
+            textarea(
+              class=setModifiers('feedback__field', ['area']),
+              name='about',
+              placeholder='Свой проект по созданию универсальной инфраструктуры строительства',
+            )
+        button.feedback__button(type='submit')
+          span.feedback__button-legend Отправить

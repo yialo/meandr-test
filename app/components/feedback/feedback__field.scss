@@ -1,0 +1,29 @@
+.#{$this}__field {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  padding-bottom: 12px;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: $font-roboto;
+  letter-spacing: -0.01em;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid rgba(247, 248, 250, 0.3);
+
+  &::placeholder {
+    color: rbga(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    &::placeholder {
+      visibility: hidden;
+    }
+  }
+
+  &--area {
+    resize: none;
+  }
+}

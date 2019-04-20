@@ -3,7 +3,8 @@ mixin advantages()
 
   .advantages
     .s-container.advantages__container
-      h2.s-heading.advantages__heading Преимущества работы с нами
+      h2.advantages__heading(class=setModifiers('s-heading', ['small']))
+        | Преимущества работы с нами
       .advantages__content
         ul.s-list.advantages__list
           each item in _ADVANTAGES
