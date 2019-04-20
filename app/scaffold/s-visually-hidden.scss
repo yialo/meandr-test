@@ -1,4 +1,4 @@
-.#{$this} {
+.s-visually-hidden {
   @at-root {
     &:not(:focus):not(:active),
     input[type="checkbox"]#{&},

@@ -1,0 +1,4 @@
+.#{$this}__item {
+  @include padding-hor($_gutter-hor);
+  width: calc(100% / 3);
+}

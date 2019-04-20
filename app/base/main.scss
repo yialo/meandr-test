@@ -17,14 +17,10 @@
   "../global/styles/_tags.scss";
 
 @import
-  "../components/scaffold/s-container/*.scss",
-  "../components/scaffold/s-heading/*.scss",
-  "../components/scaffold/s-list/*.scss",
-  "../components/scaffold/s-paragraph/*.scss",
-  "../components/scaffold/s-visually-hidden/*.scss";
+  "../scaffold/*.scss";
 
 @import
-  "../components/capital/about/*.scss",
-  "../components/capital/advantages/*.scss",
-  "../components/capital/body-header/*.scss",
-  "../components/capital/challenge/*.scss";
+  "../components/about/*.scss",
+  "../components/advantages/*.scss",
+  "../components/body-header/*.scss",
+  "../components/challenge/*.scss";

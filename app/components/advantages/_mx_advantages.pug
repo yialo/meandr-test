@@ -3,11 +3,12 @@ mixin advantages()
 
   .advantages
     .s-container.advantages__container
-      h2.s-heading.advantages__heading Приемущества работы с нами
+      h2.s-heading.advantages__heading Преимущества работы с нами
       .advantages__content
         ul.s-list.advantages__list
           each item in _ADVANTAGES
             - const [caption, details] = item;
             li.advantages__item
-              h3.advantages__caption= caption
-              p.s-paragraph.advantages__details= details
+              .advantages__card
+                h3.advantages__caption= caption
+                p.s-paragraph.advantages__details= details
