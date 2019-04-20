@@ -1,7 +1,0 @@
-include _dt_head_Favicons.pug
-
-each item in FAVICONS_LINK_DATA
-  link&attributes(item)
-each item in FAVICONS_META_DATA
-  - const [name, content] = item;
-  meta(name=name, content=content)

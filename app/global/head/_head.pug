@@ -1,9 +1,13 @@
 head
+  include _mx_head_General_meta.pug
+  include _mx_head_Favicons.pug
+  include _mx_head_Fonts.pug
+
   meta(charset='utf-8')
   title #{$pageTitle} | #{$SITE_TITLE}
-  include _head_General_meta.pug
-  include _head_Favicons.pug
-  include _head_Fonts.pug
+    +head_General_meta()
+    +head_Favicons()
+    +head_Fonts()
   block head__Page-scripts
   link(rel='stylesheet', href='css/main.min.css')
 
