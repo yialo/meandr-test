@@ -2,8 +2,11 @@
   padding: 20px;
   border: $_border;
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(sm) {
     width: 50%;
+  }
+
+  @include media-breakpoint-from(hg) {
     padding: 50px 70px 61px 60px;
   }
 }

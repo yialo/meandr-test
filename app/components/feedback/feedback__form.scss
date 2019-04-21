@@ -1,6 +1,5 @@
 .#{$this}__form {
   @include media-breakpoint-from(hg) {
-    padding-left: 341px + $_padding-left;
-    padding-right: 432px;
+    @include padding-hor($_padding-left);
   }
 }

@@ -5,6 +5,11 @@
   font-size: 12px;
   line-height: 19px;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
   color: $color-orange;
+
+  @include media-breakpoint-from(sm) {
+    text-align: left;
+  }
 }

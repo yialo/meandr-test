@@ -2,7 +2,7 @@
   background-color: white;
   border: $_border;
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(sm) {
     display: flex;
     flex-wrap: wrap;
   }

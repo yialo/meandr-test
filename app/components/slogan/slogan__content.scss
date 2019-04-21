@@ -1,6 +1,10 @@
 .#{$this}__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
   @include media-breakpoint-from(hg) {
     @include margin-hor(auto);
-    width: 1139px;
+    width: 760px;
   }
 }
