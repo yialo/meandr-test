@@ -4,18 +4,21 @@
   }
 
   @include media-breakpoint-from(md) {
-    max-width: 688px;
+    width: calc(100% * 670 / 768);
+    max-width: 780px;
   }
 
   @include media-breakpoint-from(lg) {
+    width: calc(100% * 780 / 992);
     max-width: 880px;
   }
 
   @include media-breakpoint-from(xl) {
-    max-width: 920px;
+    width: calc(100% * 880 / 1200);
+    max-width: 972px;
   }
 
   @include media-breakpoint-from(hg) {
-    max-width: 972px;
+    width: 972px;
   }
 }

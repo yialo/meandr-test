@@ -4,6 +4,6 @@
   text-align: center;
 
   @include media-breakpoint-from(md) {
-    @include padding-hor(20px);
+    @include padding-hor(100% * 20 / 768);
   }
 }
