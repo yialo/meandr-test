@@ -3,7 +3,11 @@
 
   @include media-breakpoint-from(lg) {
     @include padding-ver(0);
-    @include padding-hor($_gutter-hor);
+    @include padding-hor($_gutter-hor-lg);
     width: calc(100% / 3);
+  }
+
+  @include media-breakpoint-from(xl) {
+    @include padding-hor($_gutter-hor-xl);
   }
 }

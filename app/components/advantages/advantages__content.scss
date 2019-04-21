@@ -4,11 +4,12 @@
     max-width: 520px;
   }
   @include media-breakpoint-from(lg) {
-    @include padding-hor($_gutter-hor);
+    @include padding-hor($_gutter-hor-lg);
     max-width: 976px;
   }
 
   @include media-breakpoint-from(xl) {
+    @include padding-hor($_gutter-hor-xl);
     max-width: 1040px;
   }
 
