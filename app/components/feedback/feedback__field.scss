@@ -14,7 +14,7 @@
   border-bottom: 2px solid rgba(247, 248, 250, 0.3);
 
   &::placeholder {
-    color: rbga(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:focus {
@@ -24,6 +24,11 @@
   }
 
   &--area {
+    /*
+    Fraction for viewport width dependent box min-height,
+    numbers selected by trial and error method
+    */
+    min-height: calc(200px - 0.4 * (100vw - 320px));
     overflow: hidden;
     resize: none;
   }
