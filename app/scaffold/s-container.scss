@@ -8,6 +8,7 @@
   }
 
   @include media-breakpoint-from(md) {
+    @include padding-hor(0);
     max-width: get-breakpoint(lg) - 40px;
   }
 
@@ -20,7 +21,6 @@
   }
 
   @include media-breakpoint-from(hg) {
-    @include padding-hor(0);
     max-width: get-breakpoint(hg);
   }
 }

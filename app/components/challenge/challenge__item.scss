@@ -6,6 +6,10 @@
     width: 50%;
   }
 
+  @include media-breakpoint-from(md) {
+    padding: 30px 50px  40px;
+  }
+
   @include media-breakpoint-from(hg) {
     padding: 50px 70px 61px 60px;
   }

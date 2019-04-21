@@ -1,31 +1,44 @@
 .#{$this}__container {
-  @mixin _adaptive-bg-image($breakpoint-name) {
-    $breakpoint: get-breakpoint($breakpoint-name);
-    $breakpoint-unitless: str-slice(#{$breakpoint}, 1, -3);
-
-    background-image: url("../img/#{$this}__container@#{$breakpoint-unitless}x1.jpg");
-    background-size: $breakpoint;
-
-    @include media-retina() {
-      background-image: url("../img/#{$this}__container@#{$breakpoint-unitless}x2.jpg");
-    }
-  }
-
-  @include _adaptive-bg-image(sm);
   padding-top: 240px;
   padding-bottom: 40px;
   background-color: $color-gray-light;
+  background-image: url("../img/#{$this}__container@576x1.jpg");
   background-position: top;
+  background-size: 576px;
   background-repeat: no-repeat;
 
+  @include media-retina() {
+    background-image: url("../img/#{$this}__container@576x2.jpg");
+  }
+
   @include media-breakpoint-from(sm) {
-    @include _adaptive-bg-image(md);
+    background-image: url("../img/#{$this}__container@768x1.jpg");
+    background-size: 768px;
+
+    @include media-retina() {
+      background-image: url("../img/#{$this}__container@768x2.jpg");
+    }
+  }
+
+  @include media-breakpoint-from(md) {
+    padding-top: 300px;
+    padding-bottom: 60px;
+    background-image: url("../img/#{$this}__container@992x1.jpg");
+    background-size: 992px;
+  }
+
+  @include media-breakpoint-from(lg) {
+    background-image: url("../img/#{$this}__container@1200x1.jpg");
+    background-size: 1200px;
+  }
+
+  @include media-breakpoint-from(xl) {
+    background-image: url("../img/#{$this}__container@1440x1.jpg");
+    background-size: auto;
   }
 
   @include media-breakpoint-from(hg) {
     padding-top: 501px;
     padding-bottom: 80px;
-    background-image: url("../img/#{$this}__container@1440x1.jpg");
-    background-size: auto;
   }
 }

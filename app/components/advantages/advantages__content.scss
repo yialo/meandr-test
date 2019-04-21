@@ -1,6 +1,10 @@
 .#{$this}__content {
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(md) {
     @include margin-hor(auto);
-    width: 1139px;
+    @include padding-hor($_gutter-hor);
+  }
+
+  @include media-breakpoint-from(hg) {
+    max-width: 1139px;
   }
 }

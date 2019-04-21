@@ -6,7 +6,7 @@
     margin-bottom: 0;
   }
 
-  @include media-breakpoint-to(sm) {
+  @include media-breakpoint-to(md) {
     &--last {
       .is-collapsed & {
         @include visually-hiding();

@@ -1,5 +1,5 @@
 .#{$this}__form {
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(lg) {
     @include padding-hor($_padding-left);
   }
 }

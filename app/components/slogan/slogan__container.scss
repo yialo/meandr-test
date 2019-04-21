@@ -2,6 +2,11 @@
   padding-top: 50px;
   padding-bottom: 40px;
 
+  @include media-breakpoint-from(md) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
   @include media-breakpoint-from(hg) {
     padding-top: 165px;
     padding-bottom: 126px;

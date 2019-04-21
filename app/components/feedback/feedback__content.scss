@@ -1,6 +1,12 @@
 .#{$this}__content {
+  @include margin-hor(auto);
+  max-width: 480px;
+
+  @include media-breakpoint-from(lg) {
+    max-width: 480px + $_padding-left * 2;
+  }
+
   @include media-breakpoint-from(hg) {
-    @include margin-hor(auto);
-    width: 574px + $_padding-left * 2;
+    max-width: 574px + $_padding-left * 2;
   }
 }

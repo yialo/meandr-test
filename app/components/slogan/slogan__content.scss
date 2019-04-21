@@ -3,8 +3,7 @@
   flex-direction: column;
   text-align: center;
 
-  @include media-breakpoint-from(hg) {
-    @include margin-hor(auto);
-    width: 760px;
+  @include media-breakpoint-from(md) {
+    @include padding-hor(20px);
   }
 }

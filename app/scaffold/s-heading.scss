@@ -9,6 +9,14 @@
     text-align: center;
   }
 
+  @include media-breakpoint-from(lg) {
+    font-size: 40px;
+
+    &--small {
+      font-size: 32px;
+    }
+  }
+
   @include media-breakpoint-from(hg) {
     font-size: 48px;
 
