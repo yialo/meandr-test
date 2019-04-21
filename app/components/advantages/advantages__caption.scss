@@ -18,7 +18,7 @@
     background-color: $color-orange;
   }
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(lg) {
     margin-bottom: 51px;
     text-align: left;
 

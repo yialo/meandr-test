@@ -7,7 +7,7 @@
   background-size: $_icon-height $_icon-height;
   background-repeat: no-repeat;
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(lg) {
     background-position-x: left;
   }
 }

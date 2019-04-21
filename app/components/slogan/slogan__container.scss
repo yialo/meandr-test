@@ -7,6 +7,11 @@
     padding-bottom: 60px;
   }
 
+  @include media-breakpoint-from(xl) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
   @include media-breakpoint-from(hg) {
     padding-top: 165px;
     padding-bottom: 126px;

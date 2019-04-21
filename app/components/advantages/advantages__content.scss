@@ -8,6 +8,10 @@
     max-width: 976px;
   }
 
+  @include media-breakpoint-from(xl) {
+    max-width: 1040px;
+  }
+
   @include media-breakpoint-from(hg) {
     max-width: 1139px;
   }

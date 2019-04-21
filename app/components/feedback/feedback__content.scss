@@ -6,6 +6,10 @@
     max-width: 520px + $_padding-left * 2;
   }
 
+  @include media-breakpoint-from(xl) {
+    max-width: 548px + $_padding-left * 2;
+  }
+
   @include media-breakpoint-from(hg) {
     max-width: 574px + $_padding-left * 2;
   }
