@@ -12,14 +12,26 @@
   background-color: transparent;
   border-style: none;
   border-bottom: 2px solid rgba(247, 248, 250, 0.3);
+  transition: border-bottom-color 0.15s;
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.3);
+    transition: color 0.15s;
   }
 
   &:focus {
+    border-bottom-color: rgba(247, 248, 250, 0.6);
+
     &::placeholder {
       visibility: hidden;
+    }
+  }
+
+  &:hover {
+    border-bottom-color: rgba(247, 248, 250, 0.6);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 

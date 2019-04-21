@@ -10,6 +10,7 @@
   min-height: $_min-height;
   padding-left: 46px;
   padding-right: 30px;
+  transition: color 0.15s;
 
   &::before {
     @include size($_min-height);
@@ -24,12 +25,21 @@
     background-size: 14px 14px;
     background-repeat: no-repeat;
     border-radius: $_min-height / 2;
-    transition: width 0.25s;
+    transition-property: width, background-color;
+    transition-duration: 0.25s, 0.15s;
   }
 
   &:hover {
     &::before {
       width: 100%;
+    }
+  }
+
+  &:active {
+    color: white;
+
+    &::before {
+      background-color: rgba(135, 135, 135, 1);
     }
   }
 }

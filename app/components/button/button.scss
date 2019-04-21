@@ -11,4 +11,6 @@
   text-transform: uppercase;
   border-style: none;
   border-radius: $_min-height / 2;
+  transition-property: color, background-color;
+  transition-duration: 0.15s, 0.15s;
 }

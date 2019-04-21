@@ -1,4 +1,12 @@
 .#{$this}__button {
   color: $color-orange;
   background-color: white;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }
