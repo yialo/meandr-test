@@ -7,6 +7,11 @@
     padding-bottom: 70px;
   }
 
+  @include media-breakpoint-from(md) {
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+
   @include media-breakpoint-from(hg) {
     padding-top: 100px;
     padding-bottom: 120px;

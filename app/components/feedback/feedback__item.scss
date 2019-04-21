@@ -27,7 +27,7 @@
     margin-bottom: 0;
   }
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(lg) {
     padding-top: $_top-shift;
 
     &::before {

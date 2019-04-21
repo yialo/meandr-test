@@ -28,6 +28,8 @@
   }
 
   @include media-breakpoint-from(lg) {
+    padding-top: 400px;
+    padding-bottom: 70px;
     background-image: url("../img/#{$this}__container@1200x1.jpg");
     background-size: 1200px;
   }

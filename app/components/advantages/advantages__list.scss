@@ -1,7 +1,7 @@
 .#{$this}__list {
   @include margin-ver(-$_gutter-ver);
 
-  @include media-breakpoint-from(md) {
+  @include media-breakpoint-from(lg) {
     @include margin-ver(0);
     @include margin-hor(-$_gutter-hor);
     display: flex;
