@@ -1,5 +1,5 @@
 .#{$this}__item {
-  padding: 20px;
+  padding: 20px calc((100% - 1px) * 20 / 280);
   border: $_border;
 
   @include media-breakpoint-from(sm) {
