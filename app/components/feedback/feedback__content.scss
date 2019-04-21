@@ -3,14 +3,7 @@
   max-width: 520px;
 
   @include media-breakpoint-from(lg) {
-    max-width: 520px + $_padding-left * 2;
-  }
-
-  @include media-breakpoint-from(xl) {
-    max-width: 548px + $_padding-left * 2;
-  }
-
-  @include media-breakpoint-from(hg) {
+    width: calc(100% * 704 / 992);
     max-width: 574px + $_padding-left * 2;
   }
 }
