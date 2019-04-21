@@ -1,10 +1,11 @@
 .#{$this}__content {
   @include media-breakpoint-from(sm) {
     @include margin-hor(auto);
-    max-width: 510px;
+    max-width: 540px;
   }
 
-  @include media-breakpoint-from(xl) {
-    max-width: calc(100% * 773 / 1440);
+  @include media-breakpoint-from(md) {
+    width: calc(100% * 540 / 768);
+    max-width: 773px;
   }
 }

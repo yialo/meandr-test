@@ -17,8 +17,4 @@
     width: calc(100% * 880 / 1200);
     max-width: 972px;
   }
-
-  @include media-breakpoint-from(hg) {
-    width: 972px;
-  }
 }
