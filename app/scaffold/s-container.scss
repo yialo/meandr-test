@@ -1,6 +1,6 @@
 .s-container {
   @include margin-hor(auto);
-  @include padding-hor(20px);
+  @include padding-hor(calc(100% * 20 / 320));
   max-width: get-breakpoint(sm) - 40px;
 
   @include media-breakpoint-from(sm) {
