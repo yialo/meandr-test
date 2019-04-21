@@ -1,23 +1,23 @@
 .s-container {
   @include margin-hor(auto);
   @include padding-hor(calc(100% * 20 / 320));
-  max-width: get-breakpoint(sm) - 40px;
+  max-width: get-breakpoint(sm);
 
   @include media-breakpoint-from(sm) {
-    max-width: get-breakpoint(md) - 40px;
+    max-width: get-breakpoint(md);
   }
 
   @include media-breakpoint-from(md) {
     @include padding-hor(0);
-    max-width: get-breakpoint(lg) - 40px;
+    max-width: get-breakpoint(lg);
   }
 
   @include media-breakpoint-from(lg) {
-    max-width: get-breakpoint(xl) - 40px;
+    max-width: get-breakpoint(xl);
   }
 
   @include media-breakpoint-from(xl) {
-    max-width: get-breakpoint(hg) - 40px;
+    max-width: get-breakpoint(hg);
   }
 
   @include media-breakpoint-from(hg) {

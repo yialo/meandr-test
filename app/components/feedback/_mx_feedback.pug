@@ -9,7 +9,7 @@ mixin feedback()
     const _INPUTS = [
       ['fullname', 'text', 'Фамилия и имя', 'Сидоров Александр'],
       ['email', 'email', 'Электронная почта', 'Sidorov@yandex.ru'],
-      ['tel', 'tel', 'Телефон', '+7 (999)-328-14-20'],
+      ['tel', 'tel', 'Телефон', '+7 (999) 328-14-20'],
     ];
     const _TEXTAREA = {
       caption: 'Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?',
@@ -28,13 +28,17 @@ mixin feedback()
         )
           ol.s-list.feedback__list
             each field in _INPUTS
-              - const [name, type, caption, placeholder] = field;
+              -
+                const [name, type, caption, placeholder] = field;
+                const telMask = '\\+7\\s\\(\\d{3}\\)\\s\\d{3}-\\d{2}-\\d{2}';
               +feedback__item(caption=caption)
                 input(
                   class=setModifiers('feedback__field', ['input']),
                   type=type,
                   name=name,
                   placeholder=placeholder,
+                  pattern=(type === 'tel' ? telMask : null),
+                  required,
                 )
             +feedback__item(
               modifier='last',
@@ -44,5 +48,6 @@ mixin feedback()
                 class=setModifiers('feedback__field', ['area']),
                 name='about',
                 placeholder=_TEXTAREA.placeholder,
+                required,
               )
           +button().feedback__button(type='submit') Отправить
