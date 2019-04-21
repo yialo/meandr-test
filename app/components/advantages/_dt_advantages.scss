@@ -1,5 +1,9 @@
 $this: "advantages";
 
+@mixin media-advantages-threshold() {
+  @media (min-width: 1040px) {
+    @content;
+  }
+}
+
 $_gutter-ver: 16px;
-$_gutter-hor-lg: 22px;
-$_gutter-hor-xl: 26px;

@@ -1,13 +1,9 @@
 .#{$this}__item {
   @include padding-ver($_gutter-ver);
 
-  @include media-breakpoint-from(lg) {
+  @include media-advantages-threshold() {
     @include padding-ver(0);
-    @include padding-hor($_gutter-hor-lg);
-    width: calc(100% / 3);
-  }
-
-  @include media-breakpoint-from(xl) {
-    @include padding-hor($_gutter-hor-xl);
+    width: calc(100% * 300 / 976);
+    max-width: 345px;
   }
 }

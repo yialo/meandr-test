@@ -7,7 +7,7 @@
   background-size: $_icon-height $_icon-height;
   background-repeat: no-repeat;
 
-  @include media-breakpoint-from(lg) {
+  @include media-advantages-threshold() {
     background-position-x: left;
   }
 }

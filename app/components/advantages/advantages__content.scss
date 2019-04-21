@@ -3,17 +3,13 @@
     @include margin-hor(auto);
     max-width: 520px;
   }
-  @include media-breakpoint-from(lg) {
-    @include padding-hor($_gutter-hor-lg);
-    max-width: 976px;
-  }
-
-  @include media-breakpoint-from(xl) {
-    @include padding-hor($_gutter-hor-xl);
+  @include media-advantages-threshold() {
+    width: calc(100% * 976 / 1040);
     max-width: 1040px;
   }
 
-  @include media-breakpoint-from(hg) {
+  @include media-breakpoint-from(xl) {
+    width: calc(100% * 1040 / 1200);
     max-width: 1139px;
   }
 }
