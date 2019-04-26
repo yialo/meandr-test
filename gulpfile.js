@@ -27,8 +27,8 @@ const zopfli = require('imagemin-zopfli');
 // Vinyl data and methods
 
 const imageProcessingPaths = {
-  input: './spec/img-processing/input/',
-  output: './spec/img-processing/output/',
+  input: './resources/img-processing/input/',
+  output: './resources/img-processing/output/',
 };
 const bitmapExts = '{gif,jpg,png}';
 const fontExts = '{woff,woff2}';
